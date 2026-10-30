@@ -1,0 +1,648 @@
+*{
+ box-sizing: border-box;
+ margin: 0%;
+ padding: 0%;
+}
+
+
+body {
+    background-color: rgba(18, 21, 23, 1);
+    height: 4000px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    /* УШУЛ ЭКИ САТИРДИ КОШУҢУЗ: */
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.C1{
+   
+    width: 95%;
+    margin: 0 auto;
+   
+
+}
+
+.E1{
+    display: flex; 
+    align-items: center;
+    gap: 50px; margin-top: 30px;
+}
+
+.E1 h1{
+  font-size: 38px; color: rgb(26, 156, 89); 
+  
+}
+
+.P1{
+    display: flex; gap: 80px;
+}
+.P1 a{
+    text-decoration: none; color: aliceblue; display: flex; gap: 80px; font-size: 17px; margin-left: 20px;
+}
+
+.P1 a:hover{
+    color: rgb(26, 156, 89);
+}
+
+
+/* ! БЛОК 1 U1 */
+
+.U1{
+    margin-top: 50px; 
+}
+
+.E2{
+    display: flex; flex-direction: column;
+    gap: 30px;
+}
+.E2 h1{
+  font-size: 80px; color: aliceblue;
+}
+
+.E2 h1 span{
+    color: rgb(26, 156, 89);
+}
+
+.E2 p{
+    color: rgb(195, 193, 193)
+}
+
+
+/* <Блок 1 : МИНИ 1 P2 */
+.P2 button  {
+ 
+    border-radius: 86px;
+    font-size: 24px;
+    color: aliceblue;
+}
+
+.P2 button:hover{
+    background-color: aliceblue; color: rgb(26, 156, 89);transition: 0.3s;
+}
+
+.L1{
+    width: 300px; height: 70px;  background-color: rgb(26, 156, 89);;
+}
+
+.L2{
+    width: 200px; height: 70px; background-color: rgb(25, 27, 28); margin-left: 20px;
+}
+
+
+/* <Блок 1 : МИНИ 2 P3 */
+.P3{
+   display: flex; gap: 50px; 
+}
+.P3 h2{
+    font-size: 70px ;color: aliceblue; display: flex;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.P3 span{
+    font-size: 20px; color: rgb(151, 148, 148);
+}
+
+.T1 {
+    display: flex; flex-direction: column;
+}
+
+
+/* Сүрөт */
+.M1{
+    width: 510px; margin-top: -660px; margin-left: 800px;
+    position: relative;
+    z-index: 2;
+} 
+.M2{
+    width: 810px;
+    margin-top: -460px;margin-left: 670px;
+    position: relative;
+    z-index: 0;
+}
+
+
+/* ! БЛОК 1  Анимация бөлүгүү */
+
+/*? E2 h1 жазуу  */
+
+@keyframes h1 {
+    0% {
+            transform: translateY(0);
+            /* Баштапкы орду */
+        }
+    
+        50% {
+            transform: translateY(-20px);
+            /* 20px өйдө жылат */
+        }
+    
+        100% {
+            transform: translateY(0);
+            /* Кайра ордуна келет */
+        }
+}
+
+.E2 h1{
+    animation: h1 5s ease-in-out infinite;
+}
+
+
+ /*? Сүрөт M1 */
+@keyframes M1 {
+    0% {
+            transform: translateY(0);
+            /* Баштапкы орду */
+        }
+    
+        50% {
+            transform: translateY(-20px);
+            /* 20px өйдө жылат */
+        }
+    
+        100% {
+            transform: translateY(0);
+            /* Кайра ордуна келет */
+        }
+}
+
+
+.M1 {
+    animation: M1 2s ease-in-out infinite;
+}
+
+
+/* ! БЛОК 2 U2 */
+
+.U2{
+    background-color: rgb(220, 218, 213);width: 1200px;
+    height: 380px; position: relative; z-index: 2; border-radius: 50px; margin-top: -100px;
+}
+.E3{
+ display: flex; justify-content: space-around;
+ 
+}
+
+.P4{
+    margin-top: 200px; flex-direction: column;  
+    text-align: center; display: flex; gap: 10px;
+}
+
+.P4 img{
+    width: 200px; margin-top: -180px;
+}
+.P4 h2{
+    font-size: 40px; font-weight: 400;
+}
+.P4 p{
+    font-size: 20px;
+}
+.P4{
+    color: rgba(39, 44, 47, 0.9); 
+    font-weight: 200;
+}
+
+
+/* ! БЛОК 2  Анимация бөлүгүү */
+
+ /*? Сүрөт P4 img */
+
+@keyframes img {
+    0% {
+        transform: translateY(0);
+        /* Баштапкы орду */
+        
+        
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* 20px өйдө жылат */
+
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Кайра ордуна келет */
+    }
+}
+
+.P4 img {
+    animation: img 3s ease-in-out infinite;
+}
+
+/*? h2 жазуу свет алмашуу  */
+
+@keyframes h2 {
+   
+    50% {
+       color: rgb(26, 156, 89); ;
+
+    }
+
+}
+
+
+.P4 h2 {
+    animation: h2 3s ease-in-out infinite;
+}
+
+/* ! БЛОК 3 U3 */
+
+
+.R0{
+    width: 500px; margin-top: 100px; margin-left: 100px;
+}
+
+.P5{
+    display: flex; flex-direction: column; position: relative; gap: 30px; margin-left: 1000px; margin-top: -600px; 
+}
+.P5 h1{
+    color: aliceblue; font-size: 80px; margin-left: -20px;
+}
+.P5 span{
+    color: rgb(26, 156, 89);
+}
+.P5 p{
+    color: rgba(217, 217, 217, 1); font-size: 18px;
+    margin-left: -20px;
+}
+
+.R1 button{
+    background-color: rgba(53, 198, 107, 1); border-radius: 100px; width: 250px; height: 60px;
+    font-size: 20px; color: aliceblue;  margin-top: 80px;
+    position: relative;
+    z-index: 2;
+} 
+
+.R1 button:hover {
+    background-color: rgb(14, 95, 44);
+    color: rgb(222, 233, 227);
+    transition: 0.3s;
+}
+
+.R1 img{
+   width: 20px; position:relative; left: 46px; top: 4px;
+   z-index: 3;
+}
+
+.R2{
+    width: 400px; position: relative; left: 950px;
+    z-index: 0; top: -170px;
+}
+
+
+/* ! БЛОК 4 U4 */
+
+.P6{
+    display: flex; align-items: center; gap: 30px;
+    margin-left: 150px; margin-top: -20px;
+}
+.P6 h1{
+    font-size: 80px;
+    color: aliceblue;
+}
+.P6 span{
+    color: rgb(26, 156, 89);;
+}
+
+.P6 p {
+    font-size: 20px; color: rgb(187, 193, 198);
+}
+
+.P7{
+    display: flex; margin-left: 15px; gap: 200px;
+    margin-top: 100px;
+}
+
+.R3{
+    text-align: center; border: solid 3px rgb(34, 88, 
+    57); height: 700px; border-radius: 20px; width: 400px;
+}
+/* Сүрөт */
+.N1{
+    width: 280px; margin-left: -30px; margin-top: 20px;
+}
+
+.N2 {
+    width: 320px;
+    margin-left: 10px;
+}
+
+.N3 {
+    width: 260px; 
+    margin-left: -30px; margin-top: 26px;
+}
+
+
+
+.R3 h2{
+    font-size: 40px; color: aliceblue; margin-top:-20px;
+}
+.R3 p {
+    font-size: 20px; color: rgb(133, 140, 146); margin-top: 20px;
+}
+.R3 h3{
+    color: aliceblue; font-size: 40px; margin-top: 20px;
+}
+.R3 span{
+    font-size: 20px; color:rgb(133, 140, 146);
+}
+.R3 button{
+    width: 230px; height: 50px; background-color: rgb(46, 157, 100); border-radius: 10px; color: aliceblue; font-size: 20px; margin-top: 50px;
+}
+
+.R3 button:hover{
+    background-color: rgb(36, 101, 70); transition: 0.3s;
+}
+
+
+
+/* ! БЛОК 4  Анимация бөлүгүү */
+
+@keyframes P7 {
+    0% {
+        transform: translateY(0);
+        /* Баштапкы орду болот */
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* 20px өйдө жылат */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Анан кайра ордуна келет */
+    }
+}
+
+
+.P7 {
+    animation: P7 3s ease-in-out infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /* ! БЛОК 5: U5  */
+
+.U5 {
+    margin-top: 150px;
+}
+
+.E6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+.E6 p {
+    color: rgba(217, 217, 217, 0.8);
+    font-size: 18px;
+    max-width: 450px;
+    line-height: 1.5;
+}
+
+.E6 h1 {
+    font-size: 80px;
+    color: aliceblue;
+    text-align: right;
+    line-height: 1;
+}
+
+.E6 h1 span {
+    color: rgb(26, 156, 89);
+}
+
+.P8 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
+}
+
+.R4 {
+    border-radius: 24px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 280px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+}
+
+.R4:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(26, 156, 89, 0.2);
+}
+
+.R4 h3 {
+    color: aliceblue;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.R6 {
+    grid-column: span 3;
+    min-height: 320px;
+}
+
+.R7 {
+    grid-column: span 2;
+}
+
+.L3 {
+    width: 140px;
+    height: 48px;
+    background: linear-gradient(180deg, #2ec466 0%, #208746 100%);
+    border: none;
+    border-radius: 50px;
+    color: aliceblue;
+    font-size: 18px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+    .L3:hover {
+        opacity: 0.8;
+    }
+
+
+
+   /* ! БЛОК 6: U6 */
+
+.U6 {
+    margin-top: 180px;
+    margin-bottom: 100px;
+}
+
+.E7 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.P9 h1 {
+    font-size: 80px;
+    color: aliceblue;
+   
+}
+
+.P9 h1 span {
+    color: rgb(26, 156, 89);
+}
+
+.P9 p {
+    color: rgba(217, 217, 217, 0.8);
+    font-size: 18px;
+    max-width: 420px;
+    margin: 30px 0 40px 0;
+}
+
+.P10 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.L4 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 24px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.L4:hover {
+    color: rgb(26, 156, 89);
+}
+
+.L4 img {
+    width: 32px;
+    height: 32px;
+}
+
+.P11 {
+    position: relative;
+    padding-right: 20px;
+}
+
+.N5 {
+    width: 520px;
+    
+}
+
+.N5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+
+   /* ! Блок 7 U7 */
+
+.U7 {
+    background-color: #0b0d0e;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    border-top: 1px solid rgb(12, 114, 53);
+}   
+
+.E8 {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.P12 h2 {
+    color: rgb(26, 156, 89);
+    font-size: 36px;
+}
+
+.P13 {
+    display: flex;
+    gap: 70px;
+}
+
+.P14 {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.P14 a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.P14 a:hover {
+    color: rgb(26, 156, 89);
+}
+
+.L5 {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 22px;
+   
+}
+
+.L5:hover {
+    border-color: rgb(26, 156, 89);
+    color: rgb(26, 156, 89);
+}
+
+.E9 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+}
+
+.L6 img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+}
+
+.L6 img:hover {
+    opacity: 1;
+}
